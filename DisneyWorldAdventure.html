@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Adventures of Jose and Tiffanie</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css" />
+<script type="text/javascript" src="ScriptLibrary/jquery-latest.pack.js"></script><script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script src="ScriptLibrary/jquery.stellar.js"></script>
+<script src="ScriptLibrary/jquery.scrollTo.js"></script>
+<script src="ScriptLibrary/jquery.easing.1.3.js"></script>
+<script src="ScriptLibrary/scripts.js"></script><script type="text/javascript" src="ScriptLibrary/jspath.min.js"></script><script type="text/javascript" src="ScriptLibrary/dmxDataBindings.js"></script>
+<script type="text/javascript" src="ScriptLibrary/dmxDataSet.js"></script>
+<script type="text/javascript">
+function dmxDataBindingsAction() { // v1.00
+	var action = arguments[0];
+	switch(action){
+		case 'refresh':
+			if (jQuery.dmxDataSet) {
+				var ds = jQuery.dmxDataSet.dataSets[arguments[1]];
+				if (ds) ds.load(arguments[2]);
+			}
+			break;
+		case 'selectCurrent':
+			if (jQuery.dmxDataBindings) {
+				var rp = jQuery.dmxDataBindings.regions[arguments[1]];
+				if (rp) rp.select(arguments[2]);
+			}
+			break;
+	}
+}
+
+  /* dmxDataSet name "dWorldFebA" */
+       jQuery.dmxDataSet(
+         {"id": "dWorldFebA", "preset": "Picasa_User_Album_Photos", "url": "http://picasaweb.google.com/data/feed/api/user/116979422397671438343/albumid/6000301946195792145/?kind=photo&thumbsize=160c&imgmax=720u&max-results=200&alt=json", "dataType": "jsonp"}
+       );
+  /* END dmxDataSet name "dWorldFebA" */
+
+  /* dmxDataSet name "dWorldFebB" */
+       jQuery.dmxDataSet(
+         {"id": "dWorldFebB", "preset": "Picasa_User_Album_Photos", "url": "http://picasaweb.google.com/data/feed/api/user/116979422397671438343/albumid/6000305705672256785/?kind=photo&thumbsize=160c&imgmax=720u&max-results=350&alt=json", "dataType": "jsonp"}
+       );
+  /* END dmxDataSet name "dWorldFebB" */
+
+  /* dmxDataSet name "dWorldDec12A" */
+       jQuery.dmxDataSet(
+         {"id": "dWorldDec12A", "preset": "Picasa_User_Album_Photos", "url": "http://picasaweb.google.com/data/feed/api/user/116979422397671438343/albumid/6001814111139443441/?kind=photo&thumbsize=160c&imgmax=720u&max-results=60&alt=json", "dataType": "jsonp"}
+       );
+  /* END dmxDataSet name "dWorldDec12A" */
+  
+  /* dmxDataSet name "dWorldDec12B" */
+       jQuery.dmxDataSet(
+         {"id": "dWorldDec12B", "preset": "Picasa_User_Album_Photos", "url": "http://picasaweb.google.com/data/feed/api/user/116979422397671438343/albumid/6001812615893745665/?kind=photo&thumbsize=160c&imgmax=720u&max-results=140&alt=json", "dataType": "jsonp"}
+       );
+  /* END dmxDataSet name "dWorldDec12B" */
+  
+  /* dmxDataSet name "dWorldDec12C" */
+       jQuery.dmxDataSet(
+         {"id": "dWorldDec12C", "preset": "Picasa_User_Album_Photos", "url": "http://picasaweb.google.com/data/feed/api/user/116979422397671438343/albumid/6001818212366250753/?kind=photo&thumbsize=160c&imgmax=720u&max-results=140&alt=json", "dataType": "jsonp"}
+       );
+  /* END dmxDataSet name "dWorldDec12C" */
+  /* dmxDataSet name "dWorldDec12D" */
+       jQuery.dmxDataSet(
+         {"id": "dWorldDec12D", "preset": "Picasa_User_Album_Photos", "url": "http://picasaweb.google.com/data/feed/api/user/116979422397671438343/albumid/6001816089185177953/?kind=photo&thumbsize=160c&imgmax=720u&max-results=100&alt=json&kind=photo&thumbsize=160c&imgmax=720u&max-results=100&alt=json", "dataType": "jsonp"}
+       );
+  /* END dmxDataSet name "dWorldDec12D" */
+
+  /* dmxDataSet name "dWorldDec12E" */
+       jQuery.dmxDataSet(
+         {"id": "dWorldDec12E", "preset": "Picasa_User_Album_Photos", "url": "http://picasaweb.google.com/data/feed/api/user/116979422397671438343/albumid/6001809699596448225/?kind=photo&thumbsize=160c&imgmax=720u&max-results=120&alt=json", "dataType": "jsonp"}
+       );
+  /* END dmxDataSet name "dWorldDec12E" */
+</script>
+</head>
+<body>
+<!--
+  --This is the Navigation bar
+  -->
+<nav>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container"> 
+        
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content --> 
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+        
+        <!-- Be sure to leave the brand out there if you want it shown --><!-- Everything you want hidden at 940px or less, place within here -->
+        <div class="nav-collapse collapse"> 
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <ul class="nav pull-right">
+            <li><a href="#bg4">Top</a></li>
+            <li><a href="#Feb2014Trip">Feb 2014</a></li>
+            <li><a href="#Dec2012Trip">Dec 2012</a></li>
+            <li><a href="#moreAdventrues">More Adventures</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--
+  --This is the Disney World Section
+  -->
+<section class="parallax" id="bg4" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h2 class="service">Disney World</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="parallax white-bg" id="disneyWorld">
+  <div class="container">
+    <!-- Start of Disney entries -->
+	<!--
+	  --This is the Disney Trip in Feb 2014 Part 1 - Magic Kingdom
+	  -->
+    <div class="row" id="Feb2014Trip">
+      <div class="span12">
+        <h2 class="text-center">February 2014 Trip<br>
+            <small>Day 1 - Magic Kingdom</small></h2>
+        <div class="span11">
+          <div class="pre-scrollable">
+            <ul class="thumbnails hidden-phone" id="disneyFebA" data-binding-repeat-children="{{dWorldFebA.feed.entry}}">
+              <li class="span2">
+                <div class="thumbnail"> <img src="img/camera-icon.png" alt="thumb" class="img-circle" onClick="dmxDataBindingsAction('selectCurrent','disneyFebA',this)" data-binding-src="{{media$group.media$thumbnail[0].url}}" /> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="row" id="disneyFebADetail" data-binding-detail="disneyFebA">
+              <div class="span6">
+                 <img src="img/camera-icon.png" alt="big_img" class="big-img img-rounded" data-binding-src="{{media$group.media$content[0].url}}" />
+              </div>
+              <div class="span6">
+                <h3>{{media$group.media$description.$t}}</h3>
+              <p>Image Height: {{media$group.media$content[0].height}} px</p>
+              <p>Image Width: {{media$group.media$content[0].width}} px</p>
+              <p>Photo by: Jose &amp; Tiffanie</p>
+              <p>Album: {{dWorldFebA.feed.title.$t}}</p>
+              <p>Album Description: {{dWorldFebA.feed.subtitle.$t}}</p>
+              <ul class="pager">
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyFebA','prev')">< Previous</a></li>
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyFebA','next')">Next ></a></li>
+              </ul>
+              <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+	  --This is the Disney Trip in Feb 2014 Part 2 - Hollywood Studios
+	  -->
+    <div class="row">
+      <div class="span12">
+        <h2 class="text-center">February 2014 Trip<br>
+            <small>Day 2 - Hollywood Studios</small></h2>
+        <div class="span11">
+          <div class="pre-scrollable">
+            <ul class="thumbnails hidden-phone" id="disneyFebB" data-binding-repeat-children="{{dWorldFebB.feed.entry}}">
+              <li class="span2">
+                <div class="thumbnail"> <img src="img/camera-icon.png" alt="thumb" class="img-circle" onClick="dmxDataBindingsAction('selectCurrent','disneyFebB',this)" data-binding-src="{{media$group.media$thumbnail[0].url}}" /> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="row" id="disneyFebBDetail" data-binding-detail="disneyFebB">
+              <div class="span6">
+                 <img src="img/camera-icon.png" alt="big_img" class="big-img img-rounded" data-binding-src="{{media$group.media$content[0].url}}" />
+              </div>
+              <div class="span6">
+                <h3>{{media$group.media$description.$t}}</h3>
+              <p>Image Height: {{media$group.media$content[0].height}} px</p>
+              <p>Image Width: {{media$group.media$content[0].width}} px</p>
+              <p>Photo by: Jose &amp; Tiffanie</p>
+              <p>Album: {{dWorldFebB.feed.title.$t}}</p>
+              <p>Album Description: {{dWorldFebB.feed.subtitle.$t}}</p>
+              <ul class="pager">
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyFebB','prev')">< Previous</a></li>
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyFebB','next')">Next ></a></li>
+              </ul>
+              <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!--
+	  --This is the Disney Trip in Dec 2012 Part 1 - Hollywood Studios
+	  -->
+    <div class="row" id="Dec2012Trip">
+      <div class="span12">
+        <h2 class="text-center">December 2012 Trip<br>
+            <small>Day 1 - Hollywood Studios</small></h2>
+        <div class="span11">
+          <div class="pre-scrollable">
+            <ul class="thumbnails hidden-phone" id="disneyDec12A" data-binding-repeat-children="{{dWorldDec12A.feed.entry}}">
+              <li class="span2">
+                <div class="thumbnail"> <img src="img/camera-icon.png" alt="thumb" class="img-circle" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12A',this)" data-binding-src="{{media$group.media$thumbnail[0].url}}" /> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="row" id="disneyDec12ADetail" data-binding-detail="disneyDec12A">
+              <div class="span6">
+                 <img src="img/camera-icon.png" alt="big_img" class="big-img img-rounded" data-binding-src="{{media$group.media$content[0].url}}" />
+              </div>
+              <div class="span6">
+                <h3>{{media$group.media$description.$t}}</h3>
+              <p>Image Height: {{media$group.media$content[0].height}} px</p>
+              <p>Image Width: {{media$group.media$content[0].width}} px</p>
+              <p>Photo by: Jose &amp; Tiffanie</p>
+              <p>Album: {{dWorldDec12A.feed.title.$t}}</p>
+              <p>Album Description: {{dWorldDec12A.feed.subtitle.$t}}</p>
+              <ul class="pager">
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12A','prev')">< Previous</a></li>
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12A','next')">Next ></a></li>
+              </ul>
+              <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+	  --This is the Disney Trip in Dec 2012 Part 2 - Animal Kingdom
+	  -->
+    <div class="row">
+      <div class="span12">
+        <h2 class="text-center">December 2012 Trip<br>
+            <small>Day 2 - Animal Kingdom</small></h2>
+        <div class="span11">
+          <div class="pre-scrollable">
+            <ul class="thumbnails hidden-phone" id="disneyDec12B" data-binding-repeat-children="{{dWorldDec12B.feed.entry}}">
+              <li class="span2">
+                <div class="thumbnail"> <img src="img/camera-icon.png" alt="thumb" class="img-circle" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12B',this)" data-binding-src="{{media$group.media$thumbnail[0].url}}" /> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="row" id="disneyDec12BDetail" data-binding-detail="disneyDec12B">
+              <div class="span6">
+                 <img src="img/camera-icon.png" alt="big_img" class="big-img img-rounded" data-binding-src="{{media$group.media$content[0].url}}" />
+              </div>
+              <div class="span6">
+                <h3>{{media$group.media$description.$t}}</h3>
+              <p>Image Height: {{media$group.media$content[0].height}} px</p>
+              <p>Image Width: {{media$group.media$content[0].width}} px</p>
+              <p>Photo by: Jose &amp; Tiffanie</p>
+              <p>Album: {{dWorldDec12B.feed.title.$t}}</p>
+              <p>Album Description: {{dWorldDec12B.feed.subtitle.$t}}</p>
+              <ul class="pager">
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12B','prev')">< Previous</a></li>
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12B','next')">Next ></a></li>
+              </ul>
+              <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+	  --This is the Disney Trip in Dec 2012 Part 3 - Epcot
+	  -->
+    <div class="row">
+      <div class="span12">
+        <h2 class="text-center">December 2012 Trip<br>
+            <small>Day 3 - Epcot</small></h2>
+        <div class="span11">
+          <div class="pre-scrollable">
+            <ul class="thumbnails hidden-phone" id="disneyDec12C" data-binding-repeat-children="{{dWorldDec12C.feed.entry}}">
+              <li class="span2">
+                <div class="thumbnail"> <img src="img/camera-icon.png" alt="thumb" class="img-circle" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12C',this)" data-binding-src="{{media$group.media$thumbnail[0].url}}" /> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="row" id="disneyDec12CDetail" data-binding-detail="disneyDec12C">
+              <div class="span6">
+                 <img src="img/camera-icon.png" alt="big_img" class="big-img img-rounded" data-binding-src="{{media$group.media$content[0].url}}" />
+              </div>
+              <div class="span6">
+                <h3>{{media$group.media$description.$t}}</h3>
+              <p>Image Height: {{media$group.media$content[0].height}} px</p>
+              <p>Image Width: {{media$group.media$content[0].width}} px</p>
+              <p>Photo by: Jose &amp; Tiffanie</p>
+              <p>Album: {{dWorldDec12C.feed.title.$t}}</p>
+              <p>Album Description: {{dWorldDec12C.feed.subtitle.$t}}</p>
+              <ul class="pager">
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12C','prev')">< Previous</a></li>
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12C','next')">Next ></a></li>
+              </ul>
+              <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+	  --This is the Disney Trip in Dec 2012 Part 4 - Magic Kingdom
+	  -->
+    <div class="row">
+      <div class="span12">
+        <h2 class="text-center">December 2012 Trip<br>
+            <small>Day 4 - Magic Kingdom</small></h2>
+        <div class="span11">
+          <div class="pre-scrollable">
+            <ul class="thumbnails hidden-phone" id="disneyDec12D" data-binding-repeat-children="{{dWorldDec12D.feed.entry}}">
+              <li class="span2">
+                <div class="thumbnail"> <img src="img/camera-icon.png" alt="thumb" class="img-circle" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12D',this)" data-binding-src="{{media$group.media$thumbnail[0].url}}" /> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="row" id="disneyDec12DDetail" data-binding-detail="disneyDec12D">
+              <div class="span6">
+                 <img src="img/camera-icon.png" alt="big_img" class="big-img img-rounded" data-binding-src="{{media$group.media$content[0].url}}" />
+              </div>
+              <div class="span6">
+                <h3>{{media$group.media$description.$t}}</h3>
+              <p>Image Height: {{media$group.media$content[0].height}} px</p>
+              <p>Image Width: {{media$group.media$content[0].width}} px</p>
+              <p>Photo by: Jose &amp; Tiffanie</p>
+              <p>Album: {{dWorldDec12D.feed.title.$t}}</p>
+              <p>Album Description: {{dWorldDec12D.feed.subtitle.$t}}</p>
+              <ul class="pager">
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12D','prev')">< Previous</a></li>
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12D','next')">Next ></a></li>
+              </ul>
+              <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+	  --This is the Disney Trip in Dec 2012 Part 5 - Magic Kingdom
+	  -->
+    <div class="row">
+      <div class="span12">
+        <h2 class="text-center">December 2012 Trip<br>
+            <small>Day 5 - Magic Kingdom</small></h2>
+        <div class="span11">
+          <div class="pre-scrollable">
+            <ul class="thumbnails hidden-phone" id="disneyDec12E" data-binding-repeat-children="{{dWorldDec12E.feed.entry}}">
+              <li class="span2">
+                <div class="thumbnail"> <img src="img/camera-icon.png" alt="thumb" class="img-circle" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12E',this)" data-binding-src="{{media$group.media$thumbnail[0].url}}" /> </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="row" id="disneyDec12EDetail" data-binding-detail="disneyDec12E">
+              <div class="span6">
+                 <img src="img/camera-icon.png" alt="big_img" class="big-img img-rounded" data-binding-src="{{media$group.media$content[0].url}}" />
+              </div>
+              <div class="span6">
+                <h3>{{media$group.media$description.$t}}</h3>
+              <p>Image Height: {{media$group.media$content[0].height}} px</p>
+              <p>Image Width: {{media$group.media$content[0].width}} px</p>
+              <p>Photo by: Jose &amp; Tiffanie</p>
+              <p>Album: {{dWorldDec12E.feed.title.$t}}</p>
+              <p>Album Description: {{dWorldDec12E.feed.subtitle.$t}}</p>
+              <ul class="pager">
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12E','prev')">< Previous</a></li>
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','disneyDec12E','next')">Next ></a></li>
+              </ul>
+              <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of Disney entries -->  
+  </div>
+</section>
+<!-- More Adventures Links -->
+<section>
+	<div class="container" id='moreAdventrues'>
+    	<div class="row">
+			<div span='12' id='OtherPages'>
+		        <h2 class="text-center">More Adventures</h2>
+		        	<div class="span8">
+		        		<ul class="thumbnails hidden-phone">
+		        			<li class='span2'><h4 class='text-center'>Home Page<br><a href="OurAdventures.html"><img src="img/home-volcanoe.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+		        		</ul>
+       					<ul class="thumbnails hidden-phone">
+  					    	<li class="span2"><h4 class='text-center'>Christmas<br><a href="XmasInTheParkAdventure.html"><img src="img/christmas-tree.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+	  					    <li class="span2"><h4 class='text-center'>Napa Valley<br><a href="NapaValleyAdventure.html"><img src="img/napa-valley.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>Disney World<br><a href="DisneyWorldAdventure.html"><img src="img/disney-welcome.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>Universals<br><a href="UniversalsAdventure.html"><img src="img/universals-orlando.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>United Kingdom<br><a href="UnitedKingdomAdventure.html"><img src="img/stonehenge.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>France<br><a href="FranceAdventure.html"><img src="img/eiffel-tower.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>Spain<br><a href="SpainAdventure.html"><img src="img/spain.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  					    	<li class="span2"><h4 class='text-center'>Italy<br><a href="ItalyAdventure.html"><img src="img/colessium.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+					    </ul>
+				    </div>
+				</h2>
+			</div>
+		</div>
+	</div>
+</section>
+<!--footer for the copyright-->
+<footer>
+  <div class="container">
+	  <div class="row">
+	    <div class="span12 text-center">
+	      <p>Copyright &copy; Jose Altamirano</p>
+        </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

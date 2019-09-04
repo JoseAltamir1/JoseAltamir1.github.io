@@ -1,0 +1,259 @@
+/* Compiled Less CSS File */
+/* Generated from "style.css" */
+
+/* CSS Document */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #999999;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 400;
+}
+
+h6 {
+  font-weight: 150;
+}
+
+#header {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background: #3498db;
+	padding: 0;
+	background: url(../img/home-bg.jpg) no-repeat center center #ffffff;
+	background-size: cover;
+	min-height: 320px;
+	background-image: url(../img/home-volcanoe.jpg);
+}
+#header .container {
+  position: relative;
+  height: 100%;
+}
+#header .page-header {
+	position: absolute;
+	bottom: 140px;
+	width: 578px;
+	border-bottom: none;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+#header h1.intro {
+  font-weight: 300;
+  color: #f4f4f4;
+}
+#header small {
+	color: #f4f4f4;
+	font-weight: 300;
+	text-align: right;
+}
+nav {
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  opacity: 0.95;
+}
+.parallax {
+  height: auto;
+  position: relative;
+  width: 100%;
+  padding-bottom: 80px;
+  padding-top: 60px;
+}
+.parallax .whitebg {
+  background: #ffffff;
+}
+.parallax h2 {
+  text-transform: uppercase;
+  color: #808080;
+  margin-bottom: 40px;
+}
+.parallax h2.service {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+.parallax h2.service small {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+#bg1 {
+  background: url(../img/christmas-tree.jpg) no-repeat;
+  background-position: top center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#bg2 {
+  background: url(../img/napa-valley.jpg) no-repeat;
+  background-position: top center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#bg3 {
+  background: url(../img/universals-orlando.jpg) no-repeat;
+  background-position: top center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#bg4 {
+  background: url(../img/disney-welcome.jpg) no-repeat;
+  background-position: top center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#bg5 {
+  background: url(../img/stonehenge.jpg) no-repeat;
+  background-position: top center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#bg6 {
+  background: url(../img/eiffel-tower.jpg) no-repeat;
+  background-position: top center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#bg7 {
+  background: url(../img/spain.jpg) no-repeat;
+  background-position: top center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#bg8 {
+  background: url(../img/colessium.jpg) no-repeat;
+  background-position: top center;
+  height: 400px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+#services img {
+  background: #efefef;
+  -webkit-box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+#services img:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+}
+#services .span4 {
+  margin-bottom: 40px;
+}
+.big-img {
+	position: relative;
+	margin-left: 20px !important;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+.index-img {
+	position: relative;
+	margin-left: 15px !important;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+#detail1 p,
+#detail1 h3,
+#detail1 ul li {
+  font-weight: 300 !important;
+}
+.hero-unit {
+  padding: 25px;
+  padding-bottom: 10px;
+}
+.hero-unit li {
+  font-size: 14px;
+  line-height: 18px;
+}
+.thumbnail {
+  border: none !important;
+  border-radius: none !important;
+  box-shadow: none !important;
+}
+.thumbnail img {
+  cursor: pointer;
+  border: 8px solid #eee;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.thumbnail img:hover {
+  border: 8px solid #ccc;
+}
+footer {
+  background: #757575;
+  color: #c1c1c1;
+  font-size: 12px;
+  padding: 15px 0;
+}
+.brand {
+  font-weight: 400 !important;
+}
+
+#OtherPages div { position: relative; float: center; display: block; left: 15%; overflow: hidden; }
+#OtherPages ul { position: relative; float: left; display: block; left: 50%; }
+#OtherPages ul li { position: relative; float: left; display: block; right: 50%; }
+
+@media (max-width: 767px) {
+  footer,
+  #header {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  #bg1,
+  #bg2,
+  #bg3,
+  #bg4,
+  #bg5,
+  #bg6,
+  #bg7,
+  #bg8 {
+    margin-left: -20px;
+    margin-right: -20px;
+    width: auto;
+    height: 220px;
+  }
+  .navbar {
+    margin-bottom: 0 !important;
+  }
+  h1.intro {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 400;
+  }
+  h1.intro small {
+    font-size: 18px;
+  }
+  #detail1 p,
+  #detail1 h3,
+  #detail1 ul li {
+    font-size: 14px !important;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

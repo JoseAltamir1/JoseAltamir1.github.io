@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>The Adventures of Jose and Tiffanie</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-responsive.css" />
+<script type="text/javascript" src="ScriptLibrary/jquery-latest.pack.js"></script><script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script src="ScriptLibrary/jquery.stellar.js"></script>
+<script src="ScriptLibrary/jquery.scrollTo.js"></script>
+<script src="ScriptLibrary/jquery.easing.1.3.js"></script>
+<script src="ScriptLibrary/scripts.js"></script><script type="text/javascript" src="ScriptLibrary/jspath.min.js"></script><script type="text/javascript" src="ScriptLibrary/dmxDataBindings.js"></script>
+<script type="text/javascript" src="ScriptLibrary/dmxDataSet.js"></script>
+<script type="text/javascript">
+function dmxDataBindingsAction() { // v1.00
+	var action = arguments[0];
+	switch(action){
+		case 'refresh':
+			if (jQuery.dmxDataSet) {
+				var ds = jQuery.dmxDataSet.dataSets[arguments[1]];
+				if (ds) ds.load(arguments[2]);
+			}
+			break;
+		case 'selectCurrent':
+			if (jQuery.dmxDataBindings) {
+				var rp = jQuery.dmxDataBindings.regions[arguments[1]];
+				if (rp) rp.select(arguments[2]);
+			}
+			break;
+	}
+}
+
+  /* dmxDataSet name "xmasPark" */
+       jQuery.dmxDataSet(
+         {"id": "xmasPark", "preset": "Picasa_User_Album_Photos", "url": "http://picasaweb.google.com/data/feed/api/user/116979422397671438343/albumid/6000173924001207921/?kind=photo&thumbsize=160c&imgmax=720u&max-results=150&alt=json", "dataType": "jsonp"}
+       );
+  /* END dmxDataSet name "xmasPark" */
+</script>
+</head>
+<body>
+<!--
+  --This is the Navigation bar
+  -->
+<nav>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container"> 
+        
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content --> 
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a> 
+        
+        <!-- Be sure to leave the brand out there if you want it shown --><!-- Everything you want hidden at 940px or less, place within here -->
+        <div class="nav-collapse collapse"> 
+          <!-- .nav, .navbar-search, .navbar-form, etc -->
+          <ul class="nav pull-right">
+            <li><a href="#bg1">Top</a></li>
+            <li><a href="#xmasPark">Chirstmas 2013</a></li>
+            <li><a href="#moreAdventrues">More Adventures</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!--
+  --This is the Christmas in the Park Section
+  -->
+<section class="parallax" id="bg1" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row">
+      <div class="span12 text-center">
+        <h2 class="service">Chirstmas in the Park</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="parallax white-bg" id="xmasPark">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h2 class="text-center">December 2013</h2>
+        <div class="span11">
+          <div class="pre-scrollable">
+            <ul class="thumbnails hidden-phone" id="parkImg" data-binding-repeat-children="{{xmasPark.feed.entry}}">
+              <li class="span2">
+                <div class="thumbnail"> <img src="img/camera-icon.png" alt="thumb" class="img-circle" data-binding-src="{{media$group.media$thumbnail[0].url}}" onClick="dmxDataBindingsAction('selectCurrent','parkImg',this)" /> 
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="span12">
+            <div class="row" id="parkImgDetail" data-binding-detail="parkImg">
+              <div class="span6">
+                 <img src="img/camera-icon.png" alt="Select an image" class="big-img img-rounded" data-binding-src="{{media$group.media$content[0].url}}" />
+              </div>
+              <div class="span6">
+                   <h3>{{media$group.media$description.$t}}</h3>
+              <p>Image Height: {{media$group.media$content[0].height}} px</p>
+              <p>Image Width: {{media$group.media$content[0].width}} px</p>
+              <p>Photo by: Jose &amp; Tiffanie</p>
+              <p>Album: {{xmasPark.feed.title.$t}}</p>
+              <p>Album Description: {{xmasPark.feed.subtitle.$t}}</p>
+              <ul class="pager">
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','parkImg','prev')">< Previous</a></li>
+                <li><a href="javascript:void(0);" onClick="dmxDataBindingsAction('selectCurrent','parkImg','next')">Next ></a></li>
+              </ul>
+              <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- More Adventures Links -->
+<section>
+	<div class="container" id='moreAdventrues'>
+    	<div class="row">
+			<div span='12' id='OtherPages'>
+		        <h2 class="text-center">More Adventures</h2>
+		        	<div class="span8">
+		        		<ul class="thumbnails hidden-phone">
+		        			<li class='span2'><h4 class='text-center'>Home Page<br><a href="OurAdventures.html"><img src="img/home-volcanoe.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+		        		</ul>
+       					<ul class="thumbnails hidden-phone">
+  					    	<li class="span2"><h4 class='text-center'>Christmas<br><a href="XmasInTheParkAdventure.html"><img src="img/christmas-tree.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+	  					    <li class="span2"><h4 class='text-center'>Napa Valley<br><a href="NapaValleyAdventure.html"><img src="img/napa-valley.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>Disney World<br><a href="DisneyWorldAdventure.html"><img src="img/disney-welcome.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>Universals<br><a href="UniversalsAdventure.html"><img src="img/universals-orlando.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>United Kingdom<br><a href="UnitedKingdomAdventure.html"><img src="img/stonehenge.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>France<br><a href="FranceAdventure.html"><img src="img/eiffel-tower.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  						    <li class="span2"><h4 class='text-center'>Spain<br><a href="SpainAdventure.html"><img src="img/spain.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+  					    	<li class="span2"><h4 class='text-center'>Italy<br><a href="ItalyAdventure.html"><img src="img/colessium.jpg" alt="big_img" class="index-img img-rounded"/></a></h4></li>
+					    </ul>
+				    </div>
+				</h2>
+			</div>
+		</div>
+	</div>
+</section>
+<!--footer for the copyright-->
+<footer>
+  <div class="container">
+	  <div class="row">
+	    <div class="span12 text-center">
+	      <p>Copyright &copy; Jose Altamirano</p>
+        </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
